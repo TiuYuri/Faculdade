@@ -1,0 +1,90 @@
+<doctype!>
+<html>
+  <head>    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">   
+    <title>Page title</title>   
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+  </head>
+  <body>  
+    <div id="container">      
+      <div id="header" title="sitename">
+        <center><img src="img/logo.jpg"></center>   
+      </div>    
+      <div id="mainnav">        
+        <ul>              
+        <li class="menutop"><a class="menu" href="index.html">Home</a></li>              
+        <li><a class="menu" href="blog.html">blog</a></li>              
+        <li><a class="menu" href="exemplos.html">Exemplos</a></li>              
+        <li><a class="menu" href="contato.html">Contato</a></li>
+        </ul>     
+      </div>  
+      <div id="bloco">  
+        <div id="menu">       
+          <h3>Links uteis</h3>
+          <p><a href="https://code.visualstudio.com/">Site Oficial</a></p>
+          <p><a href="https://twitter.com/code">Twitter Oficial</a></p>
+          <p><a href="https://code.visualstudio.com/Download">Downloads</a></p>
+          <p><a href="https://code.visualstudio.com/Search">Documentação</a></p>
+        </div>    
+        <div id="contents">       
+          <div class="blogentry">               
+        </div>  
+        <div>
+          <h2> 
+            Extension Packs
+          </h2>
+          <p>
+            March 07, 2017 Wade Anderson, @waderyan_
+          </p>
+          <p>
+            If you have followed our blog for the last year, you'll notice I write an Extension Roundup blog 
+            once a month. I like to write these blogs to let you know about the cool extensions being created 
+            in the community and to inspire you to create your own. I often put a theme around the Roundup blog: 
+            something like JavaScript extensions or CodeLens extensions (last month).
+          </p>
+          <p>
+            Creating a theme for this blog is a natural fit for a relatively new part of the extension API,
+             Extension Packs. Last month I created my first Extension Pack to bring together all of my favorite 
+             CodeLens extensions. In this month's Roundup, I want to teach you how to make your own pack and give 
+             you some examples of why you would want to.
+          </p>
+          <h2>
+Hot Exit Comes to Insiders
+</h2>
+<p>
+November 30, 2016 by Daniel Imms, @Tyriar
+</p>
+<p>
+The ability to have Visual Studio Code remember unsaved changes when you exit (hot exit) has been a long requested feature, in fact it's currently number #3 in terms of 👍 reactions on GitHub. We've been working on an implementation for some time and it is now enabled by default in the Insiders build!
+</p>
+<h3>
+Initial design
+</h3>
+<p>
+We initially considered tying backups to an opened folder so that once VS Code was closed, that same folder would have to be opened again in order to trigger the hot exit restore. The main issue with this approach was that backups could potentially go "missing"; the backups are still around but the user may have forgotten which folder they were in when they made the changes.
+</p>
+<h3>
+Restricting to entire application shutdown
+</h3>
+<p>
+It was due to this fear of having backups persisted but not be discoverable that we decided to add a restriction to when a hot exit occurs: Hot exit will only occur when all VS Code windows are being closed, or in the case of Mac, the application is quit (Cmd+Q).
+</p>
+<p>
+While this may seem restricting at first, particularly when you frequently work on multiple folders, the great thing is that all of the workspaces with backups will be presented when you relaunch VS Code and so there is no ambiguity as to what else could be backed up.
+</p>
+<p>
+The important exception to this restriction is that when a window is reloaded then hot exit will always trigger. This means no more annoying Save dialog when installing extensions!
+</p>
+
+        </div>  
+      </div>  
+     </div>  
+         <div id="footer">         
+      <p class="foot">Copyright © yuri 2017</p>   
+    </div>
+    </div>
+
+  </body>  
+</html>
+
