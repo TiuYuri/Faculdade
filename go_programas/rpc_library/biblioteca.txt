@@ -1,0 +1,4 @@
+1,batata vol 1,chandoli,1234,1999,false,nil
+2,batata vol 2,chandoli,1235,1999,false,nil
+3,batata vol 3,chandoli,1236,1999,false,nil
+4,batata vol 4,chandoli,1237,1999,true,murilo

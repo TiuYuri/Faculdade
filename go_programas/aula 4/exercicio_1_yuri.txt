@@ -1,0 +1,1 @@
+retirando o * você passa apenas uma cópia de P para o metodo logo não alterando o valor de P em si.
